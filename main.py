@@ -1,10 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, Label, font
 from PIL import Image, ImageTk
+import pillow_avif                  #only for avif file format
 
 def import_file():
     global img,file_path
-    fileTypes = [("Image files", "*.png;*.jpg;*.jpeg; *.webp")]
+    fileTypes = [("Image files", "*.png;*.jpg;*.jpeg; *.webp, *.avif")]
     file_path = tk.filedialog.askopenfilename(title="Select a file", filetypes=fileTypes)
     print(file_path)
     label.config(text=f"Image loaded:{file_path}")
