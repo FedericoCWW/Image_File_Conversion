@@ -32,7 +32,7 @@ import_b = tk.Button(root, text="Import File", font="Arial 14",command=import_fi
 import_b.pack(pady=20)
 label = Label(text="")
 label.pack(pady=10)
-combobox = ttk.Combobox(root, values=[".jpg", ".png", ".tga", ".bmp", ".webp"])
+combobox = ttk.Combobox(root, values=[".jpg", ".png", ".tga", ".bmp", ".webp", ".dds"])
 combobox.pack()
 convert_b = tk.Button(root, text="Convert", font="Arial 14",command=convert)
 convert_b.pack(pady=20)
